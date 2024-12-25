@@ -1,0 +1,133 @@
+/* Container pour le champ de recherche */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Légère couleur de fond pour la zone de recherche */
+    border-radius: 10px; /* Coins arrondis pour un effet moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre portée pour un effet flottant */
+  }
+  
+  /* Champ de saisie */
+  .search-input {
+    width: 350px; /* Largeur plus large pour un meilleur confort */
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd; /* Bordure plus douce */
+    border-radius: 30px; /* Coins plus arrondis pour un style moderne */
+    margin-right: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    background-color: #fff; /* Fond blanc pour contraster avec le fond de la page */
+  }
+  
+  /* Effet au focus sur le champ de recherche */
+  .search-input:focus {
+    border-color: #ff00f7;
+    box-shadow: 0 0 8px rgba(244, 205, 246, 0.4); /* Ombre plus accentuée au focus */
+    background-color: #fff0fd; /* Changement de couleur de fond au focus */
+  }
+  
+  /* Bouton de recherche */
+  .search-button {
+    padding: 12px 20px;
+    background-color: #ff00d4;
+    color: #fff;
+    border: none;
+    border-radius: 30px; /* Coins arrondis pour le bouton */
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet flottant */
+  }
+  
+  /* Effet au survol du bouton de recherche */
+  .search-button:hover {
+    background-color: #b300a1;
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+  }
+  
+  /* Effet au focus sur le bouton */
+  .search-button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.6); /* Ombre plus marquée au focus */
+  }
+/* Liste des vidéos */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Design responsive avec plusieurs colonnes */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Élément de chaque vidéo */
+  li {
+    background-color: #fff; /* Fond blanc pour chaque vidéo */
+    border-radius: 10px; /* Coins arrondis pour un look moderne */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre portée douce pour un effet flottant */
+    overflow: hidden; /* Cache les parties qui dépassent du container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour les effets au survol */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+  }
+  
+  /* Effet au survol d'un élément de vidéo */
+  li:hover {
+    transform: translateY(-10px); /* Légère translation vers le haut au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre plus marquée pour l'effet de survol */
+  }
+  
+  /* Titre de la vidéo */
+  h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-overflow: ellipsis; /* Ajouter des points de suspension si le texte est trop long */
+    overflow: hidden;
+    white-space: nowrap; /* Empêche le texte de s'étendre sur plusieurs lignes */
+  }
+  
+  /* Description de la vidéo */
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; /* Empêche le texte de s'étendre sur plusieurs lignes */
+  }
+  
+  /* Image de la vidéo */
+  img {
+    width: 100%; /* Prend toute la largeur de l'élément parent */
+    height: auto;
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    margin-top: 10px;
+    object-fit: cover; /* Assure que l'image reste bien cadrée */
+  }
+
+  
+
+/* Style pour le titre h1 */
+h1 {
+    font-size: 2rem; /* Taille de police grande et visible */
+    color: #ed0cd6; /* Couleur sombre pour un bon contraste avec le fond */
+    font-family: 'Arial', sans-serif; /* Police sans-serif propre */
+    font-weight: bold; /* Texte en gras pour le rendre plus percutant */
+    text-align: center; /* Centrer le texte horizontalement */
+    margin-bottom: 30px; /* Espace sous le titre pour aérer la page */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    letter-spacing: 2px; /* Espacement des lettres pour un effet plus moderne */
+    position: relative; /* Nécessaire pour l'effet de soulignement */
+  }
+  
+  
+  
